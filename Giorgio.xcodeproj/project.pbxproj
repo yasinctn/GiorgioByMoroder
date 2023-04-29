@@ -14,6 +14,8 @@
 		B0708BE229FC141300C742D4 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0708BE129FC141300C742D4 /* OnboardingView.swift */; };
 		B0708BE429FC142F00C742D4 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0708BE329FC142F00C742D4 /* HomeView.swift */; };
 		B0708BE829FC413A00C742D4 /* CircleGroups.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0708BE729FC413A00C742D4 /* CircleGroups.swift */; };
+		B08F997629FD6BA900497A6A /* DaftPunk-GiorgioByMoroder.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B08F997529FD6BA900497A6A /* DaftPunk-GiorgioByMoroder.mp3 */; };
+		B08F997929FD6FF500497A6A /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08F997829FD6FF500497A6A /* SoundPlayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		B0708BE129FC141300C742D4 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		B0708BE329FC142F00C742D4 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		B0708BE729FC413A00C742D4 /* CircleGroups.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleGroups.swift; sourceTree = "<group>"; };
+		B08F997529FD6BA900497A6A /* DaftPunk-GiorgioByMoroder.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DaftPunk-GiorgioByMoroder.mp3"; sourceTree = "<group>"; };
+		B08F997829FD6FF500497A6A /* SoundPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +64,10 @@
 				B0708BD129FC133D00C742D4 /* GiorgioApp.swift */,
 				B0708BE529FC144800C742D4 /* Screens */,
 				B0708BE629FC40C500C742D4 /* Views */,
-				B0708BD529FC133E00C742D4 /* Assets.xcassets */,
+				B08F997729FD6FAA00497A6A /* Utilities */,
+				B08F997429FD6B9500497A6A /* Sounds */,
 				B0708BD729FC133E00C742D4 /* Preview Content */,
+				B0708BD529FC133E00C742D4 /* Assets.xcassets */,
 			);
 			path = Giorgio;
 			sourceTree = "<group>";
@@ -90,6 +96,22 @@
 				B0708BE729FC413A00C742D4 /* CircleGroups.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		B08F997429FD6B9500497A6A /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				B08F997529FD6BA900497A6A /* DaftPunk-GiorgioByMoroder.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		B08F997729FD6FAA00497A6A /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B08F997829FD6FF500497A6A /* SoundPlayer.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +174,7 @@
 			files = (
 				B0708BD929FC133E00C742D4 /* Preview Assets.xcassets in Resources */,
 				B0708BD629FC133E00C742D4 /* Assets.xcassets in Resources */,
+				B08F997629FD6BA900497A6A /* DaftPunk-GiorgioByMoroder.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +189,7 @@
 				B0708BE829FC413A00C742D4 /* CircleGroups.swift in Sources */,
 				B0708BE429FC142F00C742D4 /* HomeView.swift in Sources */,
 				B0708BD429FC133D00C742D4 /* ContentView.swift in Sources */,
+				B08F997929FD6FF500497A6A /* SoundPlayer.swift in Sources */,
 				B0708BD229FC133D00C742D4 /* GiorgioApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

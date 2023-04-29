@@ -10,6 +10,8 @@ import SwiftUI
 struct HomeView: View {
     @AppStorage("onboarding") var isOnboardingViewActive = false
     @State private var isAnimating = false
+    @ObservedObject private var player = SoundPlayer()
+    
     var body: some View {
         ZStack {
             Color(.black)
@@ -51,6 +53,7 @@ struct HomeView: View {
                     //MARK: - FOOTER
                     ZStack {
                         Button(action: {
+                            player.stopSound()
                             withAnimation {
                                 isOnboardingViewActive = true
                             }
@@ -66,12 +69,14 @@ struct HomeView: View {
                             .buttonBorderShape(.capsule)
                     }
                     .opacity(isAnimating ? 1 : 0 )
-                    .animation(.easeOut(duration: 1).delay(5), value: isAnimating)
+                    .animation(.easeOut(duration: 1).delay(7), value: isAnimating)
                     
                     Spacer()
                 }
             }
         }.onAppear {
+            player.playSound(soundName: "DaftPunk-GiorgioByMoroder", type: "mp3")
+            
             DispatchQueue.main.asyncAfter(deadline: .now() , execute: {
                 isAnimating = true
             })
